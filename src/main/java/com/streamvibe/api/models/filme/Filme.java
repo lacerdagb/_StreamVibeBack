@@ -1,10 +1,7 @@
 package com.streamvibe.api.models.filme;
 
-import jakarta.persistence.Entity;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Getter // Mesma coisa que gerar o get e set na action
 @Setter 
@@ -14,12 +11,19 @@ import lombok.Setter;
 
 public class Filme {
 
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Responsável para não repetir, o ID, tudo do jakarta 
+    private Integer id;
+
+
     private String nome;
     private String estudio;
     private double duracao;
     private String imagem;
-    private String genero;
+
+    @Enumerated(EnumType.STRING)
+    private Genero genero;
+
     private String diretor;
     private String elenco;
     private String sinopse;
