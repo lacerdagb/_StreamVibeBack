@@ -8,13 +8,11 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-
 public class Filme {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Responsável para não repetir, o ID, tudo do jakarta 
     private Integer id;
-
 
     private String nome;
     private String estudio;

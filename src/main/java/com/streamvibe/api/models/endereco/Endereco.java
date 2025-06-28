@@ -7,7 +7,6 @@ import jakarta.persistence.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 @Embeddable
 public class Endereco {
 

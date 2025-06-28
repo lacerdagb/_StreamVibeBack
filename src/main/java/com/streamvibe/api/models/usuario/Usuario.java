@@ -12,8 +12,6 @@ import jakarta.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-
-
 //Nome, data de nascimento, email, senha, cpf -> String 
 public class Usuario {
     @Id
