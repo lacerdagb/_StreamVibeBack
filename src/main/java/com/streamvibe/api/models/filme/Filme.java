@@ -26,6 +26,8 @@ public class Filme {
     private String elenco;
     private String sinopse;
 
+    private Boolean ativo = true; /* Aqui é criado uma nova coluna para mostrar se o filme está ativo ou não */
+
     public Filme(DadosCadastroFilme dados) {
         this.nome = dados.nome();
         this.estudio = dados.estudio();
@@ -35,5 +37,9 @@ public class Filme {
         this.diretor = dados.diretor();
         this.elenco = dados.elenco();
         this.sinopse = dados.sinopse();
+    }
+
+    public void exclusaoLogica() {
+        this.ativo = false;
     }
 }
