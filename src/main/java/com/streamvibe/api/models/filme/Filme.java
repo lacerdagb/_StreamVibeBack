@@ -42,4 +42,16 @@ public class Filme {
     public void exclusaoLogica() {
         this.ativo = false;
     }
+    public void atualizarInformacoes(DadosAtualizacaoFilme dados) {
+        if(dados.nome() != null) {
+            this.nome = dados.nome();
+        }
+        if(dados.estudio() != null) {
+            this.estudio = dados.nome();
+        }
+        if(dados.diretor() != null) {
+            this.diretor = dados.diretor();
+        }
+
+    }
 }
