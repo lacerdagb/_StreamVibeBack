@@ -7,14 +7,6 @@ Este repositório contém a API backend para StreamVibe, uma aplicação de stre
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Primeiros Passos](#primeiros-passos)
-  - [Pré-requisitos](#pré-requisitos)
-  - [Instalação](#instalação)
-  - [Executando a Aplicação](#executando-a-aplicação)
-- [Endpoints da API](#endpoints-da-api)
-- [Banco de Dados](#banco-de-dados)
-- [Contribuindo](#contribuindo)
-- [Licença](#licença)
 
 ## Funcionalidades
 
@@ -44,12 +36,3 @@ A lógica principal do gerenciamento de filmes pode ser encontrada no pacote `co
 - `Genero.java`: Enum que define os gêneros de filmes disponíveis.
 - `FilmeRepository.java`: Repositório Spring Data JPA para a entidade `Filme`.
 
-## Primeiros Passos
-
-### Pré-requisitos
-
-Antes de começar, certifique-se de ter o seguinte instalado:
-
-- Java Development Kit (JDK) 17 ou superior
-- Maven
-- Uma instância de banco de dados PostgreSQL (ou outro banco de dados SQL compatível)
